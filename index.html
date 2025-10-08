@@ -1,0 +1,373 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="src/output.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+  
+    <style>
+      body {
+        background-color: #f7fbff;
+        font-family: 'Outfit',sans-serif;
+      }
+    </style>
+</head>
+<body>
+<nav class="relative transition-all duration-500 md:py-[24px] md:px-[80px] p-[20px]" id="navbar">
+  <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+    <div class="relative flex h-16 items-center justify-between">
+      
+      <!-- Tombol menu + Profile di kanan -->
+      <div class="absolute inset-y-0 right-0 flex items-center sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+        
+        <!-- Tombol hamburger (mobile menu) -->
+        <button type="button" command="--toggle" commandfor="mobile-menu" class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-white/5 hover:text-white focus:outline-2 focus:-outline-offset-1 focus:outline-indigo-500 sm:hidden">
+          <span class="absolute -inset-0.5"></span>
+          <span class="sr-only">Open main menu</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6 in-aria-expanded:hidden">
+            <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6 not-in-aria-expanded:hidden">
+            <path d="M6 18 18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </button>
+      </div>
+     <!-- Logo -->
+  <div class="flex items-center space-x-2">
+    <img src="img/Logo.png" alt="logo" class="md:w-[110px] md:h-[48px] w-[92px] h-[40px]" />
+    <span class="text-sm text-orange-500 ml-2  sm:inline tracking-widest">
+      SERVICE PROVIDER
+    </span>
+  </div>
+
+  <!-- Buttons (Desktop) -->
+  <div class="flex flex-1 items-center justify-end sm:items-stretch sm:justify-end ">
+            
+            <div class="hidden sm:ml-6 sm:block ">
+              <div class="flex space-x-4">
+                <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-white/5 hover:text-white" -->
+              <div class="hidden sm:flex justify-end space-x-4 gap-4 ">
+                <button class="text-gray-700 hover:underline">Login</button>
+                <button
+                  class="border rounded-lg px-8 py-[14px] text-sm font-medium hover:bg-gray-50"
+                >
+                  Create Account
+                </button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+     
+    </div>
+  </div>
+
+  <el-disclosure id="mobile-menu" hidden class="block sm:hidden">
+    <div class="space-y-1 px-2 pt-2 pb-3 ">
+      <a href="#" aria-current="page" class="block rounded-md px-3 py-2 text-base font-medium text-white"> <button class="text-gray-700 hover:underline">Login</button></a>
+      <a href="#" class="block rounded-md px-3 py-2 text-base font-medium hover:bg-white/5 hover:text-white">
+      <button class=" block border border-gray-300 rounded-lg px-4 py-2 text-sm font-medium hover:bg-gray-50">
+                  Create Account
+       </button></a>
+    </div>
+  </el-disclosure>
+</nav>
+   <!-- SECTION HEADER -->
+    <section class="text-center" id="mainContent">
+      <div class="flex flex-col items-center justify-center mt-16 px-[20px] md:px-2 md:space-y-8 space-y-6">
+
+        <p class="text-sm text-sky-500 tracking-[0.3em] md:text-[16px] text-[12px]">
+          FOR BEAUTY, WELLNESS & FITNESS
+        </p>
+        <h1 class="text-[48px] md:text-[72px] font-semibold tracking-tight leading-[48px] text-center md:text-left">
+            Free 
+            <span class="text-sky-500 relative inline-block">
+              Booking
+              <img
+                src="img/icon/Arrow.png"
+                alt="arrow"
+                class="absolute left-1/2 -translate-x-1/2 top-full mt-[-5px] md:mt-2 w-[180px] md:w-[250px] h-[9px]"
+              />
+            </span> 
+            Software
+          </h1>
+          <div class="flex flex-col sm:flex-row justify-center md:w-full sm:w-full sm:px-6 w-[200px] md:gap-8 gap-6 text-gray-600 text-sm leading-relaxed text-center">
+            <!-- Arrow Icon -->
+    <img src="img/icon/Arrow_05.png" alt="Arrow" class="absolute top-[40%] right-[6%] w-[200px] h-[200px] hidden md:block sm:hidden" />
+            <!-- End Arrow Icon -->
+            <div class="flex items-center gap-4 sm:gap-1.5 tracking-tight">
+              <img src="img/icon/Frame 14501.png" class="w-[20px] h-[20px]" />
+              UK Based Support
+            </div>
+            <div class="flex items-center gap-4 sm:gap-1.5 tracking-tight">
+              <img src="img/icon/Frame 14501.png" class="w-[20px] h-[20px]" />
+              24/7 Online Booking
+            </div>
+            <div class="flex items-center gap-4 sm:gap-1.5 tracking-tight">
+              <img src="img/icon/Frame 14501.png" class="w-[20px] h-[20px]" />
+              No Card Details Required
+            </div>
+            <div class="flex items-center gap-4 sm:gap-1.5 tracking-tight">
+              <img src="img/icon/Frame 14501.png" class="w-[20px] h-[20px]" />
+              No Installation Necessary
+            </div>
+          </div>
+        <button
+          class="mt-8 bg-sky-900 text-white px-[48px] py-[20px] rounded-lg font-semibold hover:bg-sky-800 transition">
+          Get Started
+        </button>
+      </div>
+
+      <div class="justify-end md:px-[220px] md:pt-16 p-[20px] pt-[63px]">
+  
+        <img
+          src="img/Browser.png"
+          alt="Booking Activity"
+          class="justify-around"
+        />
+      </div>
+      <img src="img/element/lingkaran1.png" class="absolute z-[-1] left-0 top-[30%] w-[320px] h-[450px] hidden md:block"  alt="">
+      <img src="img/element/lingkaran2.png" class="absolute z-[-1] right-0 top-[calc(100%-211px)] w-[320px] h-[450px] hidden md:block"  alt="">
+    </section>
+<!-- END SECTION -->
+
+<!-- 2 -->
+ <section class="bg-white flex items-center justify-center">
+
+<div class="w-full md:px-[8.75rem] md:pt-[120px] md:pb-[60px] px-[20px] pt-[64px] pb-[40px] bg-white ">
+<!-- filter grayscale -->
+    <!-- Tabs -->
+    <div class="hidden md:flex flex-row gap-6 p-2 mb-16 justify-between max-w-full  shadow-[2px_3px_32px_0_rgba(209,211,227,0.32)]">
+      <button class="flex items-center gap-2 tab-btn px-6 py-4 md:text-[20px] sm:text-[16px] tracking-[-1px] font-semibold rounded-lg border border-[#66C1EE] bg-[#DDF3FF] text-[#66C1EE]" data-tab="bookings">
+        <img src="img/icon/CalendarBlank-active.svg" data-default="img/icon/CalendarBlank.png" data-active="img/icon/CalendarBlank-active.svg" id="btn1" class="w-8 h-8" alt="">Manage Bookings
+      </button>
+      <button class="flex items-center gap-2 tab-btn px-6 py-4 md:text-[20px] sm:text-[16px] tracking-[-1px] font-semibold rounded-lg border border-white" data-tab="services">
+        <img src="img/icon/Rows.png" data-default="img/icon/Rows.png" data-active="img/icon/Rows-active.png"  id="btn2" class="w-8 h-8" alt="">Organise Services
+      </button>
+      <button class="flex items-center gap-2 tab-btn px-6 py-4 md:text-[20px] sm:text-[16px] tracking-[-1px] font-semibold rounded-lg border border-white" data-tab="analytics">
+        <img src="img/icon/ChartBar.png" data-default="img/icon/ChartBar.png" data-active="img/icon/ChartBar-active.png"  id="btn3" class="w-8 h-8" alt="">Business Analytics
+      </button>
+      <button class="flex items-center gap-2 tab-btn px-6 py-4 md:text-[20px] sm:text-[16px] tracking-[-1px] font-semibold rounded-lg border border-white" data-tab="payments">
+        <img src="img/icon/Wallet.png" data-default="img/icon/Wallet.png" data-active="img/icon/Wallet-active.png"  id="btn4" class="w-8 h-8" style="color:black;" alt="">Receive Payments
+      </button>
+    </div>
+    <!-- End Tabs -->
+  <div class="flex md:hidden items-center gap-4 mb-6 justify-between">
+     <button class="flex items-center gap-2 tab-btn md:text-[20px] sm:text-[16px] tracking-[-1px] font-semibold text-[#66C1EE]" data-tab="bookings">
+        <img src="img/icon/CalendarBlank-active.svg" data-default="img/icon/CalendarBlank.png" data-active="img/icon/CalendarBlank-active.svg" id="btn1" class="w-8 h-8" alt="">Manage Bookings
+      </button>
+    <div class="flex gap-4 justify-end">
+      <button class="w-8 h-8 flex items-center justify-center rounded-lg bg-gray-200 hover:bg-gray-300 transition">
+        <!-- Panah kiri -->
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+        </svg>
+      </button>
+      <button class="w-8 h-8 flex items-center justify-center rounded-lg bg-[#0E1E3A] hover:bg-[#1f376b] transition">
+        <!-- Panah kanan -->
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+        </svg>
+      </button>
+    </div>  
+  </div>
+    <!-- Tab Contents -->
+    <div >
+      <div class="tab-content" id="bookings">
+        <div class="flex flex-col md:flex-row items-center md:gap-[116px] gap-8">
+          <img src="img/tabscontent/tab1.png" alt="Booking Screenshot" class="w-full md:w-1/2 rounded-lg md:mb-0">
+          <div class="md:ml-8  flex flex-col md:gap-6 gap-4 text-center md:text-left">
+            <h2 class="md:text-[48px] text-[32px] tracking-[-1.5px] md:leading-[56px] leading-[40px] font-semibold mb-2">Manage all your bookings in one place.</h2>
+            <p class="text-gray-600 text-[18px]">With the option to view and manage your staffs bookings too!</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="tab-content hidden" id="services">
+         <div class="flex flex-col md:flex-row items-center md:gap-[116px] gap-8">
+          <img src="img/tabscontent/tab2.png" alt="Booking Screenshot" class="w-full md:w-1/2 rounded-lg md:mb-0">
+          <div class="md:ml-8  flex flex-col md:gap-6 gap-4 text-center md:text-left ">
+            <h2 class="md:text-[48px] text-[32px] tracking-[-1.5px] md:leading-[56px] leading-[40px] font-semibold mb-2 ">Organise all of your services easily.</h2>
+            <p class="text-gray-600 text-[18px]">With the option to view and manage your staffs bookings too!</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="tab-content hidden" id="analytics">
+         <div class="flex flex-col md:flex-row items-center md:gap-[116px] gap-8">
+          <img src="img/tabscontent/tab3.png" alt="Booking Screenshot" class="w-full md:w-1/2 rounded-lg md:mb-0">
+          <div class="md:ml-8  flex flex-col md:gap-6 gap-4 text-center md:text-left">
+            <h2 class="md:text-[48px] text-[32px] tracking-[-1.5px] md:leading-[56px] leading-[40px] font-semibold mb-2">Get up to date analytic on your business.</h2>
+            <p class="text-gray-600 text-[18px]">See upcoming bookings, cashflow summaries + more...</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="tab-content hidden" id="payments">
+         <div class="flex flex-col md:flex-row items-center md:gap-[116px] gap-8">
+          <img src="img/tabscontent/tab4.png" alt="Booking Screenshot" class="w-full md:w-1/2 rounded-lg md:mb-0">
+          <div class="md:ml-8  flex flex-col md:gap-6 gap-4 text-center md:text-left">
+            <h2 class="md:text-[48px] text-[32px] tracking-[-1.5px] md:leading-[56px] leading-[40px] font-semibold mb-2">Easily withdraw your balance income</h2>
+            <p class="text-gray-600 text-[18px]">See upcoming bookings, cashflow summaries + more...</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    const tabs = document.querySelectorAll('.tab-btn');
+    const contents = document.querySelectorAll('.tab-content');
+
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        // Remove active classes  
+        tabs.forEach(t => t.classList.remove('border-[#66C1EE]', 'text-[#66C1EE]', 'bg-[#DDF3FF]'));
+        tabs.forEach(t => t.classList.add('border-white'));
+        tabs.forEach(t => {
+        const img = t.querySelector("img");
+        const defaultSrc = img.dataset.default;
+        img.src = defaultSrc;}
+        );
+        contents.forEach(c => c.classList.add('hidden'));
+        
+        // Add active classes to clicked tab
+        tab.classList.add('border-[#66C1EE]', 'text-[#66C1EE]', 'bg-[#DDF3FF]');
+        tab.classList.remove('border-white');
+
+        // Show related content
+        const tabId = tab.dataset.tab;
+
+        // Change icon to active
+        const img = tab.querySelector("img");
+        const activeSrc = img.getAttribute("data-active");
+        img.src = activeSrc;
+        document.getElementById(tabId).classList.remove('hidden');
+      });
+    });
+  </script>
+ </section>
+
+ <!-- end 2 -->
+
+ <!-- 3 -->
+  <section class="py-20 bg-white">
+  <!-- Title -->
+  <div class="text-center mb-12">
+    <h2 class="text-3xl md:text-5xl font-semibold text-[#0A0A0A] mb-3">
+      The complete booking solution
+    </h2>
+    <p class="text-gray-500 text-base md:text-lg">
+      Pick a business type to get started for free
+    </p>
+  </div>
+
+  <!-- Grid Icons -->
+  <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 max-w-6xl mx-auto">
+    <!-- Item -->
+    <div class="flex flex-col items-center text-center p-6 bg-white rounded-2xl shadow-[0_4px_24px_rgba(0,0,0,0.05)]">
+      <img src="img/icon/hair.png" alt="Hair Salon" class="w-10 h-10 mb-3" />
+      <p class="font-medium text-[#0A0A0A]">Hair Salon</p>
+    </div>
+    <div class="flex flex-col items-center text-center p-6 bg-white rounded-2xl shadow-[0_4px_24px_rgba(0,0,0,0.05)]">
+      <img src="img/icon/nail.png" alt="Nail Salon" class="w-10 h-10 mb-3" />
+      <p class="font-medium text-[#0A0A0A]">Nail Salon</p>
+    </div>
+    <div class="flex flex-col items-center text-center p-6 bg-white rounded-2xl shadow-[0_4px_24px_rgba(0,0,0,0.05)]">
+      <img src="img/icon/wax.png" alt="Waxing Salon" class="w-10 h-10 mb-3" />
+      <p class="font-medium text-[#0A0A0A]">Waxing Salon</p>
+    </div>
+    <div class="flex flex-col items-center text-center p-6 bg-white rounded-2xl shadow-[0_4px_24px_rgba(0,0,0,0.05)]">
+      <img src="img/icon/beauty.png" alt="Beauty Salon" class="w-10 h-10 mb-3" />
+      <p class="font-medium text-[#0A0A0A]">Beauty Salon</p>
+    </div>
+
+    <!-- Tambahan lainnya -->
+    <div class="flex flex-col items-center text-center p-6 bg-white rounded-2xl shadow-[0_4px_24px_rgba(0,0,0,0.05)]">
+      <img src="img/icon/barber.png" alt="Barbershop" class="w-10 h-10 mb-3" />
+      <p class="font-medium text-[#0A0A0A]">Barbershop</p>
+    </div>
+    <div class="flex flex-col items-center text-center p-6 bg-white rounded-2xl shadow-[0_4px_24px_rgba(0,0,0,0.05)]">
+      <img src="img/icon/eyebrows.png" alt="Eyebrows & Lashes" class="w-10 h-10 mb-3" />
+      <p class="font-medium text-[#0A0A0A]">Eyebrows & Lashes</p>
+    </div>
+    <div class="flex flex-col items-center text-center p-6 bg-white rounded-2xl shadow-[0_4px_24px_rgba(0,0,0,0.05)]">
+      <img src="img/icon/massage.png" alt="Massage" class="w-10 h-10 mb-3" />
+      <p class="font-medium text-[#0A0A0A]">Massage</p>
+    </div>
+    <div class="flex flex-col items-center text-center p-6 bg-white rounded-2xl shadow-[0_4px_24px_rgba(0,0,0,0.05)]">
+      <img src="img/icon/trainer.png" alt="Personal Trainer" class="w-10 h-10 mb-3" />
+      <p class="font-medium text-[#0A0A0A]">Personal Trainer</p>
+    </div>
+
+    <div class="flex flex-col items-center text-center p-6 bg-white rounded-2xl shadow-[0_4px_24px_rgba(0,0,0,0.05)]">
+      <img src="img/icon/aesthetic.png" alt="Aesthetics" class="w-10 h-10 mb-3" />
+      <p class="font-medium text-[#0A0A0A]">Aesthetics</p>
+    </div>
+    <div class="flex flex-col items-center text-center p-6 bg-white rounded-2xl shadow-[0_4px_24px_rgba(0,0,0,0.05)]">
+      <img src="img/icon/spa.png" alt="Spa" class="w-10 h-10 mb-3" />
+      <p class="font-medium text-[#0A0A0A]">Spa</p>
+    </div>
+    <div class="flex flex-col items-center text-center p-6 bg-white rounded-2xl shadow-[0_4px_24px_rgba(0,0,0,0.05)]">
+      <img src="img/icon/therapy.png" alt="Therapy" class="w-10 h-10 mb-3" />
+      <p class="font-medium text-[#0A0A0A]">Therapy</p>
+    </div>
+    <div class="flex flex-col items-center text-center p-6 bg-white rounded-2xl shadow-[0_4px_24px_rgba(0,0,0,0.05)]">
+      <img src="img/icon/tanning.png" alt="Tanning Studio" class="w-10 h-10 mb-3" />
+      <p class="font-medium text-[#0A0A0A]">Tanning Studio</p>
+    </div>
+  </div>
+</section>
+
+  <!-- End 3 -->
+<script>
+  const navbar = document.getElementById("navbar");
+  const mainContent = document.getElementById("mainContent");
+  const navbarHeight = navbar.offsetHeight; // tinggi awal navbar
+  console.log(navbarHeight);
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 50) {
+      navbar.classList.add(
+        "fixed",
+        "top-0",
+        "left-0",
+        "w-full",
+        "bg-white/90",
+        "backdrop-blur-md",
+        "shadow-md",
+        "z-50",
+        "py-3"
+      );
+      navbar.classList.remove("relative", "bg-transparent", "py-5");
+
+      // Tambah padding di main biar halaman ga loncat
+      mainContent.style.paddingTop = "125px";
+    } else {
+      
+      mainContent.style.paddingTop = "10px";
+      navbar.classList.remove(
+        "fixed",
+        "top-0",
+        "left-0",
+        "w-full",
+        "bg-white/90",
+        "backdrop-blur-md",
+        "shadow-md",
+        "z-50",
+        "py-3"
+      );
+      navbar.classList.add("relative", "bg-transparent");
+
+    }
+  });
+</script>
+
+
+</body>
+</html>
