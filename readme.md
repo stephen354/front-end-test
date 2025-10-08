@@ -13,7 +13,7 @@ Dibuat menggunakan **Tailwind CLI** tanpa framework tambahan seperti React atau 
 ---
 
 ## 🚀 Preview
-![Preview Screenshot](./img/preview.png)
+![Preview Screenshot](https://github.com/stephen354/front-end-test/blob/main/img/preview.PNG)
 
 ---
 
