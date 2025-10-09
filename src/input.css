@@ -1,1 +1,43 @@
 @import "tailwindcss";
+
+.headline {
+  @apply text-[32px] sm:text-4xl md:text-5xl md:leading-[56px] leading-10 tracking-tighter font-semibold text-[#0A0A0A];
+}
+.first-desc{
+    @apply flex items-center lg:text-[16px] md:text-[12px] text-[16px] gap-4 md:gap-4 sm:gap-1.5 tracking-tight;
+}
+.tabs-button{
+    @apply flex items-center gap-2 md:px-6 md:py-4 py-2  lg:text-[20px] md:text-[18px] sm:text-[16px] tracking-[-1px] font-semibold rounded-lg;
+}
+.tabs-button-mobile{
+    @apply flex items-center gap-2 md:text-[20px] sm:text-[16px] tracking-[-1px] font-semibold text-[#66C1EE];
+}
+.tabs-content{
+    @apply lg:text-[48px] sm:text-4xl text-[32px] tracking-[-1.5px] md:leading-[56px] leading-[40px] font-semibold mb-2;
+}
+.tabs-div1{
+    @apply flex flex-col md:flex-row items-center lg:gap-[116px] md:gap-4 gap-8;
+}
+.tabs-div2{
+    @apply md:ml-8  flex flex-col md:gap-6 gap-4 text-center md:text-left;
+}
+.grid-icon {
+  @apply flex flex-col items-center justify-center text-center px-4 py-6 md:gap-8 gap-6 bg-white rounded-3xl shadow-[0_4px_24px_rgba(0,0,0,0.05)];
+}
+
+.grid-p{
+    @apply font-semibold md:text-2xl text-[18px] text-[#0A0A0A];
+}
+
+.faq-headline{
+    @apply font-semibold text-[#162238] text-[20px] tracking-tighter leading-7;
+}
+.faq-div{
+    @apply flex flex-col bg-white rounded-2xl shadow-[0_4px_24px_rgba(0,0,0,0.05)] p-8 gap-4;
+}
+.faq-text{
+    @apply leading-6 font-normal text-[16px];
+}
+.textblue{
+    @apply text-[#66C1EE];
+}

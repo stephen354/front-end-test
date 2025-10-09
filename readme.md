@@ -20,10 +20,10 @@ Dibuat menggunakan **Tailwind CLI** tanpa framework tambahan seperti React atau 
 ## ⚙️ Setup & Usage
 ```bash
 npm install
-npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch
+npx tailwindcss -i ./src/input.css -o ./src/output.css --watch
 
 ```
 ### 1️⃣ Clone repository
 ```bash
-git clone https://github.com/username/tailwind-test.git
-cd tailwind-test
+git clone https://github.com/stephen354/front-end-test.git
+cd front-end-test

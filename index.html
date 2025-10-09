@@ -13,6 +13,7 @@
       body {
         background-color: #f7fbff;
         font-family: 'Outfit',sans-serif;
+        overflow-x: hidden;
       }
     </style>
 </head>
@@ -80,12 +81,12 @@
     <section class="text-center" id="mainContent">
       <div class="flex flex-col items-center justify-center mt-16 px-[20px] md:px-2 md:space-y-8 space-y-6">
 
-        <p class="text-sm text-sky-500 tracking-[0.3em] md:text-[16px] text-[12px]">
+        <p class="text-sm textblue tracking-[0.3em] md:text-[16px] text-[12px]">
           FOR BEAUTY, WELLNESS & FITNESS
         </p>
-        <h1 class="text-[48px] md:text-[72px] font-semibold tracking-tight leading-[48px] text-center md:text-left">
+        <h1 class="text-[48px] md:text-[72px] sm:text-6xl font-semibold tracking-tight leading-[48px] text-center md:text-left">
             Free 
-            <span class="text-sky-500 relative inline-block">
+            <span class="textblue relative inline-block">
               Booking
               <img
                 src="img/icon/Arrow.png"
@@ -95,23 +96,23 @@
             </span> 
             Software
           </h1>
-          <div class="flex flex-col sm:flex-row justify-center md:w-full sm:w-full sm:px-6 w-[200px] md:gap-8 gap-6 text-gray-600 text-sm leading-relaxed text-center">
+          <div class="flex flex-col sm:flex-row justify-center md:w-full sm:w-full sm:px-6 w-[300px] md:gap-8 gap-6 text-gray-600 text-sm leading-relaxed text-center">
             <!-- Arrow Icon -->
-    <img src="img/icon/Arrow_05.png" alt="Arrow" class="absolute top-[40%] right-[6%] w-[200px] h-[200px] hidden md:block sm:hidden" />
+    <img src="img/icon/Arrow_05.png" alt="Arrow" class="absolute top-[40%] right-[6%] w-[200px] h-[200px] hidden lg:block sm:hidden" />
             <!-- End Arrow Icon -->
-            <div class="flex items-center gap-4 sm:gap-1.5 tracking-tight">
+            <div class="first-desc">
               <img src="img/icon/Frame 14501.png" class="w-[20px] h-[20px]" />
               UK Based Support
             </div>
-            <div class="flex items-center gap-4 sm:gap-1.5 tracking-tight">
+            <div class="first-desc">
               <img src="img/icon/Frame 14501.png" class="w-[20px] h-[20px]" />
               24/7 Online Booking
             </div>
-            <div class="flex items-center gap-4 sm:gap-1.5 tracking-tight">
+            <div class="first-desc">
               <img src="img/icon/Frame 14501.png" class="w-[20px] h-[20px]" />
               No Card Details Required
             </div>
-            <div class="flex items-center gap-4 sm:gap-1.5 tracking-tight">
+            <div class="first-desc">
               <img src="img/icon/Frame 14501.png" class="w-[20px] h-[20px]" />
               No Installation Necessary
             </div>
@@ -122,52 +123,68 @@
         </button>
       </div>
 
-      <div class="justify-end md:px-[220px] md:pt-16 p-[20px] pt-[63px]">
-  
+      <div class="justify-end lg:px-[220px] md:pt-16 md:px-10 px-[20px] pt-[63px]">
         <img
           src="img/Browser.png"
           alt="Booking Activity"
           class="justify-around"
         />
       </div>
-      <img src="img/element/lingkaran1.png" class="absolute z-[-1] left-0 top-[30%] w-[320px] h-[450px] hidden md:block"  alt="">
-      <img src="img/element/lingkaran2.png" class="absolute z-[-1] right-0 top-[calc(100%-211px)] w-[320px] h-[450px] hidden md:block"  alt="">
+      <img src="img/element/lingkaran1.png" class="absolute z-[-1] left-0 top-[30%] w-[320px] h-[450px] hidden lg:block"  alt="">
+      <img src="img/element/lingkaran2.png" class="absolute z-[-1] right-0 top-[calc(100%-211px)] w-[320px] h-[450px] hidden lg:block"  alt="">
     </section>
 <!-- END SECTION -->
 
 <!-- 2 -->
  <section class="bg-white flex items-center justify-center">
 
-<div class="w-full md:px-[8.75rem] md:pt-[120px] md:pb-[60px] px-[20px] pt-[64px] pb-[40px] bg-white ">
+<div class="w-full px-6 sm:px-10 md:px-10 lg:px-30 xl:px-32 md:py-0 md:pt-24 py-16 lg:py-36 ">
 <!-- filter grayscale -->
     <!-- Tabs -->
     <div class="hidden md:flex flex-row gap-6 p-2 mb-16 justify-between max-w-full  shadow-[2px_3px_32px_0_rgba(209,211,227,0.32)]">
-      <button class="flex items-center gap-2 tab-btn px-6 py-4 md:text-[20px] sm:text-[16px] tracking-[-1px] font-semibold rounded-lg border border-[#66C1EE] bg-[#DDF3FF] text-[#66C1EE]" data-tab="bookings">
-        <img src="img/icon/CalendarBlank-active.svg" data-default="img/icon/CalendarBlank.png" data-active="img/icon/CalendarBlank-active.svg" id="btn1" class="w-8 h-8" alt="">Manage Bookings
+      <button class="tab-btn tabs-button border border-[#66C1EE] bg-[#DDF3FF] text-[#66C1EE]" data-tab="bookings">
+        <img src="img/icon/CalendarBlank-active.svg" data-default="img/icon/CalendarBlank.png" data-active="img/icon/CalendarBlank-active.svg" id="btn1" class=" w-8 h-8" alt="">Manage Bookings
       </button>
-      <button class="flex items-center gap-2 tab-btn px-6 py-4 md:text-[20px] sm:text-[16px] tracking-[-1px] font-semibold rounded-lg border border-white" data-tab="services">
-        <img src="img/icon/Rows.png" data-default="img/icon/Rows.png" data-active="img/icon/Rows-active.png"  id="btn2" class="w-8 h-8" alt="">Organise Services
+      <button class="tab-btn tabs-button border border-white" data-tab="services">
+        <img src="img/icon/Rows.png" data-default="img/icon/Rows.png" data-active="img/icon/Rows-active.png"  id="btn2" class=" w-8 h-8" alt="">Organise Services
       </button>
-      <button class="flex items-center gap-2 tab-btn px-6 py-4 md:text-[20px] sm:text-[16px] tracking-[-1px] font-semibold rounded-lg border border-white" data-tab="analytics">
-        <img src="img/icon/ChartBar.png" data-default="img/icon/ChartBar.png" data-active="img/icon/ChartBar-active.png"  id="btn3" class="w-8 h-8" alt="">Business Analytics
+      <button class="tab-btn tabs-button border border-white" data-tab="analytics">
+        <img src="img/icon/ChartBar.png" data-default="img/icon/ChartBar.png" data-active="img/icon/ChartBar-active.png"  id="btn3" class=" w-8 h-8" alt="">Business Analytics
       </button>
-      <button class="flex items-center gap-2 tab-btn px-6 py-4 md:text-[20px] sm:text-[16px] tracking-[-1px] font-semibold rounded-lg border border-white" data-tab="payments">
-        <img src="img/icon/Wallet.png" data-default="img/icon/Wallet.png" data-active="img/icon/Wallet-active.png"  id="btn4" class="w-8 h-8" style="color:black;" alt="">Receive Payments
+      <button class="tab-btn tabs-button border border-white" data-tab="payments">
+        <img src="img/icon/Wallet.png" data-default="img/icon/Wallet.png" data-active="img/icon/Wallet-active.png"  id="btn4" class=" w-8 h-8" style="color:black;" alt="">Receive Payments
       </button>
     </div>
     <!-- End Tabs -->
   <div class="flex md:hidden items-center gap-4 mb-6 justify-between">
-     <button class="flex items-center gap-2 tab-btn md:text-[20px] sm:text-[16px] tracking-[-1px] font-semibold text-[#66C1EE]" data-tab="bookings">
-        <img src="img/icon/CalendarBlank-active.svg" data-default="img/icon/CalendarBlank.png" data-active="img/icon/CalendarBlank-active.svg" id="btn1" class="w-8 h-8" alt="">Manage Bookings
+      <div class="btnMobile">
+        <button class="tabs-button-mobile">
+           <img src="img/icon/CalendarBlank-active.svg" data-default="img/icon/CalendarBlank.png" data-active="img/icon/CalendarBlank-active.svg" class="w-8 h-8" alt="">Manage Bookings
+         </button>
+      </div>
+      <div class="hidden btnMobile">
+        <button class="tabs-button-mobile ">
+        <img src="img/icon/Rows-active.png" class="w-8 h-8" alt="">Organise Services
       </button>
-    <div class="flex gap-4 justify-end">
-      <button class="w-8 h-8 flex items-center justify-center rounded-lg bg-gray-200 hover:bg-gray-300 transition">
+      </div>
+       <div class="hidden btnMobile">
+         <button class="tabs-button-mobile ">
+          <img src="img/icon/ChartBar-active.png" class="w-8 h-8" alt="">Business Analytics
+        </button>
+       </div>
+       <div class="hidden btnMobile">
+         <button class="tabs-button-mobile">
+          <img src="img/icon/Wallet-active.png" class="w-8 h-8" alt="">Receive Payments
+        </button>
+       </div>
+    <div class=" flex gap-4 justify-end">
+      <button id="prevBtn" class="arrowBtn w-8 h-8 flex items-center justify-center rounded-lg bg-gray-200 hover:bg-gray-300 transition">
         <!-- Panah kiri -->
         <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
           <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
         </svg>
       </button>
-      <button class="w-8 h-8 flex items-center justify-center rounded-lg bg-[#0E1E3A] hover:bg-[#1f376b] transition">
+      <button id="nextBtn" class="arrowBtn w-8 h-8 flex items-center justify-center rounded-lg bg-[#0E1E3A] hover:bg-[#1f376b] transition">
         <!-- Panah kanan -->
         <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
           <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
@@ -178,88 +195,150 @@
     <!-- Tab Contents -->
     <div >
       <div class="tab-content" id="bookings">
-        <div class="flex flex-col md:flex-row items-center md:gap-[116px] gap-8">
+        <div class="tabs-div1">
           <img src="img/tabscontent/tab1.png" alt="Booking Screenshot" class="w-full md:w-1/2 rounded-lg md:mb-0">
-          <div class="md:ml-8  flex flex-col md:gap-6 gap-4 text-center md:text-left">
-            <h2 class="md:text-[48px] text-[32px] tracking-[-1.5px] md:leading-[56px] leading-[40px] font-semibold mb-2">Manage all your bookings in one place.</h2>
-            <p class="text-gray-600 text-[18px]">With the option to view and manage your staffs bookings too!</p>
+          <div class="tabs-div2">
+            <h2 class="tabs-content">Manage all your bookings in one place.</h2>
+            <p class="text-gray-600 text-[18px] leading-6">With the option to view and manage your staffs bookings too!</p>
           </div>
         </div>
       </div>
 
       <div class="tab-content hidden" id="services">
-         <div class="flex flex-col md:flex-row items-center md:gap-[116px] gap-8">
+         <div class="tabs-div1">
           <img src="img/tabscontent/tab2.png" alt="Booking Screenshot" class="w-full md:w-1/2 rounded-lg md:mb-0">
-          <div class="md:ml-8  flex flex-col md:gap-6 gap-4 text-center md:text-left ">
-            <h2 class="md:text-[48px] text-[32px] tracking-[-1.5px] md:leading-[56px] leading-[40px] font-semibold mb-2 ">Organise all of your services easily.</h2>
-            <p class="text-gray-600 text-[18px]">With the option to view and manage your staffs bookings too!</p>
+          <div class="tabs-div2 ">
+            <h2 class="tabs-content ">Organise all of your services easily.</h2>
+            <p class="text-gray-600 text-[18px] leading-6">With the option to view and manage your staffs bookings too!</p>
           </div>
         </div>
       </div>
 
       <div class="tab-content hidden" id="analytics">
-         <div class="flex flex-col md:flex-row items-center md:gap-[116px] gap-8">
+         <div class="tabs-div1">
           <img src="img/tabscontent/tab3.png" alt="Booking Screenshot" class="w-full md:w-1/2 rounded-lg md:mb-0">
-          <div class="md:ml-8  flex flex-col md:gap-6 gap-4 text-center md:text-left">
-            <h2 class="md:text-[48px] text-[32px] tracking-[-1.5px] md:leading-[56px] leading-[40px] font-semibold mb-2">Get up to date analytic on your business.</h2>
-            <p class="text-gray-600 text-[18px]">See upcoming bookings, cashflow summaries + more...</p>
+          <div class="tabs-div2">
+            <h2 class="tabs-content">Get up to date analytic on your business.</h2>
+            <p class="text-gray-600 text-[18px] leading-6">See upcoming bookings, cashflow summaries + more...</p>
           </div>
         </div>
       </div>
 
       <div class="tab-content hidden" id="payments">
-         <div class="flex flex-col md:flex-row items-center md:gap-[116px] gap-8">
+         <div class="tabs-div1">
           <img src="img/tabscontent/tab4.png" alt="Booking Screenshot" class="w-full md:w-1/2 rounded-lg md:mb-0">
-          <div class="md:ml-8  flex flex-col md:gap-6 gap-4 text-center md:text-left">
-            <h2 class="md:text-[48px] text-[32px] tracking-[-1.5px] md:leading-[56px] leading-[40px] font-semibold mb-2">Easily withdraw your balance income</h2>
-            <p class="text-gray-600 text-[18px]">See upcoming bookings, cashflow summaries + more...</p>
+          <div class="tabs-div2">
+            <h2 class="tabs-content">Easily withdraw your balance income</h2>
+            <p class="text-gray-600 text-[18px] leading-6">See upcoming bookings, cashflow summaries + more...</p>
           </div>
         </div>
       </div>
     </div>
 
   </div>
+<script>
+  const tabs = document.querySelectorAll('.tab-btn');
+  const arrows = document.querySelectorAll('.arrowBtn');
+  const mobileTabs = document.querySelectorAll('.btnMobile');
+  const contents = document.querySelectorAll('.tab-content');
 
-  <script>
-    const tabs = document.querySelectorAll('.tab-btn');
-    const contents = document.querySelectorAll('.tab-content');
+  let activeIndex = 0; // tab pertama default
 
-    tabs.forEach(tab => {
-      tab.addEventListener('click', () => {
-        // Remove active classes  
-        tabs.forEach(t => t.classList.remove('border-[#66C1EE]', 'text-[#66C1EE]', 'bg-[#DDF3FF]'));
-        tabs.forEach(t => t.classList.add('border-white'));
-        tabs.forEach(t => {
-        const img = t.querySelector("img");
-        const defaultSrc = img.dataset.default;
-        img.src = defaultSrc;}
-        );
-        contents.forEach(c => c.classList.add('hidden'));
-        
-        // Add active classes to clicked tab
-        tab.classList.add('border-[#66C1EE]', 'text-[#66C1EE]', 'bg-[#DDF3FF]');
-        tab.classList.remove('border-white');
-
-        // Show related content
-        const tabId = tab.dataset.tab;
-
-        // Change icon to active
-        const img = tab.querySelector("img");
-        const activeSrc = img.getAttribute("data-active");
-        img.src = activeSrc;
-        document.getElementById(tabId).classList.remove('hidden');
-      });
+  function activateTab(index) {
+    // pastikan index valid (0 - 3)
+    if (index < 0 || index >= tabs.length) return;
+      activeIndex = index;
+    // Reset semua arrow jadi aktif (hitam)
+    arrows.forEach(r => {
+      r.classList.remove(
+        'bg-gray-200','hover:bg-gray-300'
+      );
+      r.classList.add(
+        'bg-[#0E1E3A]','hover:bg-[#1f376b]'
+      );
     });
-  </script>
+      // Jika index 0 → prev disabled
+      const prev = document.getElementById('prevBtn');
+      const next = document.getElementById('nextBtn');
+
+      if (index === 0) {
+        prev.classList.remove('bg-[#0E1E3A]','hover:bg-[#1f376b]');
+        prev.classList.add('bg-gray-200','hover:bg-gray-300');
+      }
+
+       // sembunyikan semua
+        mobileTabs.forEach(tab => tab.classList.add('hidden'));
+
+        // tampilkan yang aktif
+        mobileTabs[index].classList.remove('hidden');
+
+      // Jika index terakhir → next disabled
+      if (index === tabs.length - 1) {
+        next.classList.remove('bg-[#0E1E3A]','hover:bg-[#1f376b]');
+        next.classList.add('bg-gray-200','hover:bg-gray-300');
+      }
+
+
+    // reset semua tab
+    tabs.forEach(t => {
+      t.classList.remove('border-[#66C1EE]', 'text-[#66C1EE]', 'bg-[#DDF3FF]');
+      t.classList.add('border-white');
+
+      // reset icon
+      const img = t.querySelector("img");
+      img.src = img.dataset.default;
+    });
+
+    // sembunyikan semua content
+    contents.forEach(c => c.classList.add('hidden'));
+
+    // aktifkan tab sesuai index
+    const tab = tabs[activeIndex];
+    tab.classList.add('border-[#66C1EE]', 'text-[#66C1EE]', 'bg-[#DDF3FF]');
+    tab.classList.remove('border-white');
+
+    //menu mobile
+    const btnMobile = document.getElementById('btnMobile');
+
+
+    // icon aktif
+    const img = tab.querySelector("img");
+    img.src = img.dataset.active;
+
+    // tampilkan konten
+    const tabId = tab.dataset.tab;
+    document.getElementById(tabId).classList.remove('hidden');
+  } 
+
+  // klik tab (desktop & mobile)
+  tabs.forEach((tab, index) => {
+    tab.addEventListener('click', () => {
+      activateTab(index);
+    });
+  });
+
+  // tombol panah (khusus mobile)
+  document.getElementById('prevBtn').addEventListener('click', () => {
+    activateTab(activeIndex - 1);
+  });
+  
+  document.getElementById('nextBtn').addEventListener('click', () => {
+    activateTab(activeIndex + 1);
+  });
+
+  // set default tab saat load
+  activateTab(0);
+</script>
+
  </section>
 
  <!-- end 2 -->
 
  <!-- 3 -->
-  <section class="py-20 bg-white">
+  <section class="flex flex-col lg:px-[140px] md:px-10 md:py-[120px] px-[24px] pt-10 pb-16  md:gap-16 gap-10 bg-white">
   <!-- Title -->
-  <div class="text-center mb-12">
-    <h2 class="text-3xl md:text-5xl font-semibold text-[#0A0A0A] mb-3">
+  <div class="flex flex-col text-center gap-6">
+    <h2 class="headline">
       The complete booking solution
     </h2>
     <p class="text-gray-500 text-base md:text-lg">
@@ -268,63 +347,271 @@
   </div>
 
   <!-- Grid Icons -->
-  <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 max-w-6xl mx-auto">
+  <div class="grid grid-cols-2 sm:grid-cols-3 items-center justify-center lg:grid-cols-4 md:grid-cols-3  md:gap-8 gap-4">
     <!-- Item -->
-    <div class="flex flex-col items-center text-center p-6 bg-white rounded-2xl shadow-[0_4px_24px_rgba(0,0,0,0.05)]">
-      <img src="img/icon/hair.png" alt="Hair Salon" class="w-10 h-10 mb-3" />
-      <p class="font-medium text-[#0A0A0A]">Hair Salon</p>
+    <div class="grid-icon">
+      <img src="img/icon page 3/Service.png" alt="Hair Salon" width="80" height="80" />
+      <p class="grid-p">Hair Salon</p>
     </div>
-    <div class="flex flex-col items-center text-center p-6 bg-white rounded-2xl shadow-[0_4px_24px_rgba(0,0,0,0.05)]">
-      <img src="img/icon/nail.png" alt="Nail Salon" class="w-10 h-10 mb-3" />
-      <p class="font-medium text-[#0A0A0A]">Nail Salon</p>
+    <div class="grid-icon">
+      <img src="img/icon page 3/Service-1.png" alt="Nail Salon" width="80" height="80" />
+      <p class="grid-p">Nail Salon</p>
     </div>
-    <div class="flex flex-col items-center text-center p-6 bg-white rounded-2xl shadow-[0_4px_24px_rgba(0,0,0,0.05)]">
-      <img src="img/icon/wax.png" alt="Waxing Salon" class="w-10 h-10 mb-3" />
-      <p class="font-medium text-[#0A0A0A]">Waxing Salon</p>
+    <div class="grid-icon">
+      <img src="img/icon page 3/Service-2.png" alt="Waxing Salon" width="80" height="80" />
+      <p class="grid-p">Waxing Salon</p>
     </div>
-    <div class="flex flex-col items-center text-center p-6 bg-white rounded-2xl shadow-[0_4px_24px_rgba(0,0,0,0.05)]">
-      <img src="img/icon/beauty.png" alt="Beauty Salon" class="w-10 h-10 mb-3" />
-      <p class="font-medium text-[#0A0A0A]">Beauty Salon</p>
+    <div class="grid-icon">
+      <img src="img/icon page 3/Service-3.png" alt="Beauty Salon" width="80" height="80" />
+      <p class="grid-p">Beauty Salon</p>
     </div>
 
     <!-- Tambahan lainnya -->
-    <div class="flex flex-col items-center text-center p-6 bg-white rounded-2xl shadow-[0_4px_24px_rgba(0,0,0,0.05)]">
-      <img src="img/icon/barber.png" alt="Barbershop" class="w-10 h-10 mb-3" />
-      <p class="font-medium text-[#0A0A0A]">Barbershop</p>
+    <div class="grid-icon">
+      <img src="img/icon page 3/Service-4.png" alt="Barbershop" width="80" height="80" />
+      <p class="grid-p">Barbershop</p>
     </div>
-    <div class="flex flex-col items-center text-center p-6 bg-white rounded-2xl shadow-[0_4px_24px_rgba(0,0,0,0.05)]">
-      <img src="img/icon/eyebrows.png" alt="Eyebrows & Lashes" class="w-10 h-10 mb-3" />
-      <p class="font-medium text-[#0A0A0A]">Eyebrows & Lashes</p>
+    <div class="grid-icon">
+      <img src="img/icon page 3/Service-5.png" alt="Eyebrows & Lashes" width="80" height="80" />
+      <p class="grid-p">Eyebrows & Lashes</p>
     </div>
-    <div class="flex flex-col items-center text-center p-6 bg-white rounded-2xl shadow-[0_4px_24px_rgba(0,0,0,0.05)]">
-      <img src="img/icon/massage.png" alt="Massage" class="w-10 h-10 mb-3" />
-      <p class="font-medium text-[#0A0A0A]">Massage</p>
+    <div class="grid-icon">
+      <img src="img/icon page 3/Service-6.png" alt="Massage" width="80" height="80" />
+      <p class="grid-p">Massage</p>
     </div>
-    <div class="flex flex-col items-center text-center p-6 bg-white rounded-2xl shadow-[0_4px_24px_rgba(0,0,0,0.05)]">
-      <img src="img/icon/trainer.png" alt="Personal Trainer" class="w-10 h-10 mb-3" />
-      <p class="font-medium text-[#0A0A0A]">Personal Trainer</p>
+    <div class="grid-icon">
+      <img src="img/icon page 3/Service-7.png" alt="Personal Trainer" width="80" height="80" />
+      <p class="grid-p">Personal Trainer</p>
     </div>
 
-    <div class="flex flex-col items-center text-center p-6 bg-white rounded-2xl shadow-[0_4px_24px_rgba(0,0,0,0.05)]">
-      <img src="img/icon/aesthetic.png" alt="Aesthetics" class="w-10 h-10 mb-3" />
-      <p class="font-medium text-[#0A0A0A]">Aesthetics</p>
+    <div class="grid-icon">
+      <img src="img/icon page 3/Service-8.png" alt="Aesthetics" width="80" height="80" />
+      <p class="grid-p">Aesthetics</p>
     </div>
-    <div class="flex flex-col items-center text-center p-6 bg-white rounded-2xl shadow-[0_4px_24px_rgba(0,0,0,0.05)]">
-      <img src="img/icon/spa.png" alt="Spa" class="w-10 h-10 mb-3" />
-      <p class="font-medium text-[#0A0A0A]">Spa</p>
+    <div class="grid-icon">
+      <img src="img/icon page 3/Service-9.png" alt="Spa" width="80" height="80" />
+      <p class="grid-p">Spa</p>
     </div>
-    <div class="flex flex-col items-center text-center p-6 bg-white rounded-2xl shadow-[0_4px_24px_rgba(0,0,0,0.05)]">
-      <img src="img/icon/therapy.png" alt="Therapy" class="w-10 h-10 mb-3" />
-      <p class="font-medium text-[#0A0A0A]">Therapy</p>
+    <div class="grid-icon">
+      <img src="img/icon page 3/Service-10.png" alt="Therapy" width="80" height="80" />
+      <p class="grid-p">Therapy</p>
     </div>
-    <div class="flex flex-col items-center text-center p-6 bg-white rounded-2xl shadow-[0_4px_24px_rgba(0,0,0,0.05)]">
-      <img src="img/icon/tanning.png" alt="Tanning Studio" class="w-10 h-10 mb-3" />
-      <p class="font-medium text-[#0A0A0A]">Tanning Studio</p>
+    <div class="grid-icon">
+      <img src="img/icon page 3/Service-11.png" alt="Tanning Studio" width="80" height="80" />
+      <p class="grid-p">Tanning Studio</p>
     </div>
   </div>
 </section>
 
   <!-- End 3 -->
+
+<!-- 4 -->
+
+<section class="flex flex-col-reverse lg:flex-row items-center justify-between bg-[#E8F5F3] lg:pl-[140px] md:py-[80px] lg:pr-0 md:px-10 px-[20px] py-16 gap-16">
+  <!-- Kiri -->
+  <div class="flex flex-col max-w-[528px] gap-6">
+    <p class="textblue tracking-[0.3em] text-sm font-medium md:text-start text-center md:text-[16px] text-[12px]">MARKETPLACE</p>
+    <h2 class="md:text-5xl sm:text-4xl text-[32px] tracking-tighter md:leading-14 leading-10 font-semibold md:text-start text-center">
+      Expand Your Reach <br /> & Find New Clients
+    </h2>
+    <p class="text-gray-600 md:text-[20px] text-[18px] font-medium md:leading-6 leading-[22px] md:w-[338px] md:text-start text-center">
+      List your business on our marketplace to attract new customers.
+    </p>
+
+    <ul class="space-y-4 text-[#2A3853] text-[18px] ">
+      <li class="flex items-center gap-3 md:text-start md:justify-start justify-center">
+        <img src="img/icon/Frame 14501.png" alt="check" class="w-5 h-5" />
+        You keep 100% of the profits
+      </li>
+      <li class="flex items-center gap-3 text-center md:justify-start justify-center">
+        <img src="img/icon/Frame 14501.png" alt="check" class="w-5 h-5" />
+        Get booked while you sleep
+      </li>
+      <li class="flex items-center gap-3 md:text-start text-center md:justify-start justify-center">
+        <img src="img/icon/Frame 14501.png" alt="check" class="w-5 h-5" />
+        Build trust with verified customer reviews
+      </li>
+    </ul>
+  </div>
+
+  <!-- Kanan -->
+  <div class="lg:mr-[-20px]">
+    <img src="img/Browser2full.png" alt="Marketplace Preview" class="rounded-2xl w-[705px] " />
+  </div>
+</section>
+ <!-- End 4 -->
+
+ <!-- 5 -->
+
+ <section class="flex flex-col bg-white lg:px-[240px] lg:py-[120px] md:px-10 md:py-16 py-[64px] px-[20px] text-center gap-16">
+  <!-- Judul -->
+  <h2 class="headline">
+   Optional paid features
+  </h2>
+
+  <!-- Grid 2 kolom -->
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+    <!-- Card 1 -->
+    <div class="flex flex-col bg-white rounded-2xl shadow-[0_4px_24px_rgba(0,0,0,0.05)] p-10 border border-dashed border-gray-300 gap-8">
+      <img src="img/Page.png" alt="Payment processing" class="" />
+      <div class="flex flex-col text-start gap-1">
+        <h3 class="text-sky-600 font-medium text-2xl tracking-tighter">Payment processing</h3>
+        <p class="text-gray-600 text-[18px]">
+          Low credit card processing with no hidden fees
+        </p>
+      </div>
+      <div class="flex flex-col text-start gap-2">
+        <p class="text-xl font-semibold text-[32px] tracking-tighter">1.5% + 50p</p>
+        <p class="text-gray-500 text-[18px]">One fee per transaction, online and in-store</p>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="flex flex-col gap-8 bg-white rounded-2xl shadow-[0_4px_24px_rgba(0,0,0,0.05)] p-10 border border-dashed border-gray-300">
+      <img src="img/page2.png" alt="Blast marketing" class="" />
+      <div class="flex flex-col text-start gap-1 text-2xl">
+        <h3 class="text-sky-600 font-medium text-2xl tracking-tighter">Blast marketing</h3>
+        <p class="text-gray-600 text-[18px] ">
+          Send promotional texts and emails to clients
+        </p>
+      </div>
+      <div class="flex flex-col text-start gap-2">
+        <p class="text-xl font-semibold text-[32px] tracking-tighter">£0.05 / text + £0.02 / email</p>
+        <p class="text-gray-500 text-[18px]">
+          Calculated based on the number of text messages or emails you choose to send
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+ <!-- End 5 -->
+
+ <!-- 6 -->
+<section class="flex flex-col gap-16 bg-white lg:px-[340px] lg:py-[120px] md:px-[120px] md:py-16 px-[20px] py-16  text-center">
+  <h2 class="headline">
+    Frequently Asked Questions
+  </h2>
+
+  <div class="space-y-6 text-left">
+    <!-- FAQ Item 1 -->
+    <div class="faq-div">
+      <div class="flex justify-between items-center">
+        <h3 class="faq-headline">Is Kyue FREE to use?</h3>
+        <span class="text-2xl font-light text-[#0F172A]">−</span>
+      </div>
+      <p class="faq-text">
+        Yes, the majority of features we offer are completely FREE to use. Additionally, we do have a few
+        <a href="#" class="textblue">optional paid features</a> you can also use too.
+      </p>
+    </div>
+
+    <!-- FAQ Item 2 -->
+    <div class="faq-div">
+      <div class="flex justify-between items-center">
+        <h3 class="faq-headline">Are you an app?</h3>
+        <span class="text-2xl font-light text-[#0F172A]">−</span>
+      </div>
+      <p class="faq-text">
+        We are a cloud-based system; you can access your account and platform from anywhere. There is no need to
+        download an app. Simply go to
+        <a href="https://partners.kyue.app" target="_blank" class="textblue">partners.kyue.app</a>
+        and enter your login credentials.
+      </p>
+    </div>
+
+    <!-- FAQ Item 3 -->
+    <div class="faq-div">
+      <div class="flex justify-between items-center">
+        <h3 class="faq-headline">Can I move my data from my old system?</h3>
+        <span class="text-2xl font-light text-[#0F172A]">−</span>
+      </div>
+      <p class="faq-text">
+        Yes and no. We can help you transfer important data from your old system to your new Kyue platform. Currently,
+        we can transfer your client list and set up your platform for an easy and quick start.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+ <!-- End 6 -->
+
+<section class="relative lg:px-[140px] md:px-10 px-5 bg-white">
+  
+
+  <div class="absolute bg-[#EFF9FF] w-full h-[50%] z-10 left-0 top-[50%]"></div>
+  <div class="relative bg-[#66C1EE] md:rounded-3xl rounded-2xl flex flex-col lg:pt-0 lg:flex-row lg:items-end items-center lg:justify-between justify-center pt-12  md:px-8 px-6 md:gap-0 gap-10 z-20">
+    
+    <!-- width: 45.40143292589079;
+height: 49.74176122738673;
+angle: -91.46 deg;
+opacity: 1;
+top: 32.67px;
+left: 36.27px; -->
+
+    <!-- Left Side -->
+    <div class=" relative flex flex-col gap-10 text-center lg:text-left lg:mb-[59px] lg:mt-[62px] lg:ml-[78px] md:px-[32px] lg:w-[50%]">
+      <h2 class="headline !font-semibold !text-white ">
+         <span class="relative">
+      <img src="img/icon/icon-footer.png" class="absolute -top-6 -left-7 w-[45px]" alt="" class="w-full h-auto" />
+      Everything 
+    </span>your business needs, all in one place.
+      </h2>
+      <div class="relative flex gap-[30px] justify-center">
+
+        <button class="bg-[#0A294E] text-white font-medium py-5 px-12 rounded-lg hover:bg-[#133a72] transition h-fit lg:mb-0 md:mb-10">
+          Get Started
+        </button>
+        <span class=" w-[10rem] lg:block hidden">
+      <img src="img/icon/Arrowfooter.png" alt="" class="w-full " />
+    </span>
+       <span class="absolute lg:hidden block md:-bottom-[100%] sm:-bottom-[210%] md:right-[10%] -right-6 md:w-[175px] w-[130px]">
+      <img src="img/icon/Arrow_mobile.png" alt="" class="w-full h-auto" />
+    </span>
+      </div>
+    </div>
+  
+    <!-- Right Side (Image) -->
+    <div class="flex lg:w-[75%] mt-5">
+      <img 
+        src="img/Frame Footer.png" 
+        alt="App preview" 
+        class=""
+      />
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-[#EFF9FF] pt-[73px] flex flex-col items-center text-center lg:px-20 md:px-8 px-[20px]">
+  <div class="flex flex-col items-center text-center gap-8">
+    <div class="flex flex-col items-center text-center gap-6">
+
+      <img src="img/Logo.png" alt="Kyue Logo" class="w-[165px]" />
+      <p class=" text-[20px] font-medium">Making your booking easy</p>
+    </div>
+
+    <div class="flex gap-6 text-gray-700">
+      <a href="#"><img src="img/icon-sosmed/Facebook.png" class="w-10 h-10"></a>
+      <a href="#"><img src="img/icon-sosmed/Linkedin.png" class="w-10 h-10"></a>
+      <a href="#"><img src="img/icon-sosmed/Instagram.png" class="w-10 h-10"></a>
+      <a href="#"><img src="img/icon-sosmed/Twitter.png" class="w-10 h-10"></a>
+    </div>
+  </div>
+
+  <div class="flex md:flex-row flex-col-reverse border-t-1 border-gray-300 justify-between w-full text-gray-500 text-xs mt-16 p-6 gap-8">
+    <div class="md:text-start text-center">
+     <p class="text-[#959EAE] text-[16px] ">© 2024 Kyue. All Rights Reserved</p>
+          </div>
+    <div class="flex gap-10 text-[#959EAE] text-[16px] md:justify-end justify-center">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+    </div>
+  </div>
+
+</footer>
+
+
 <script>
   const navbar = document.getElementById("navbar");
   const mainContent = document.getElementById("mainContent");
